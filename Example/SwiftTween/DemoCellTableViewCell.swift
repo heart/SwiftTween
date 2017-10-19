@@ -36,7 +36,7 @@ class DemoCellTableViewCell: UITableViewCell {
             (value:Double,timePassed:Double,finish:Bool)->Void in
             
             let f = self.dot.frame
-            self.dot.frame = CGRect(x:CGFloat(value-20) ,
+            self.dot.frame = CGRect(x:CGFloat(value) ,
                                     y:CGFloat(200-value),
                                     width:f.size.width,
                                     height:f.size.height)
