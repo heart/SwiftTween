@@ -1,0 +1,6 @@
+framework module SwiftTween {
+  umbrella header "SwiftTween-umbrella.h"
+
+  export *
+  module * { export * }
+}

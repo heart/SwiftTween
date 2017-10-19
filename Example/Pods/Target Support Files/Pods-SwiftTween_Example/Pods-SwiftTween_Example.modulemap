@@ -1,0 +1,6 @@
+framework module Pods_SwiftTween_Example {
+  umbrella header "Pods-SwiftTween_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

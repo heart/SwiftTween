@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EFE5B8C1F9872990036EAC8 /* DemoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE5B8B1F9872990036EAC8 /* DemoCellTableViewCell.swift */; };
+		3EFE5B941F98772B0036EAC8 /* SwiftTween.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFE5B951F98772B0036EAC8 /* SwiftTween.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,7 +31,9 @@
 
 /* Begin PBXFileReference section */
 		1D9A6EBABEAD2EAA52E5A879 /* Pods-SwiftTween_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTween_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTween_Example/Pods-SwiftTween_Example.release.xcconfig"; sourceTree = "<group>"; };
-		40C77116D506C9C01BC29EEC /* SwiftTween.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftTween.podspec; path = ../SwiftTween.podspec; sourceTree = "<group>"; };
+		3EFE5B8B1F9872990036EAC8 /* DemoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCellTableViewCell.swift; sourceTree = "<group>"; };
+		3EFE5B951F98772B0036EAC8 /* SwiftTween.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftTween.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C77116D506C9C01BC29EEC /* SwiftTween.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftTween.podspec; path = ../SwiftTween.podspec; sourceTree = "<group>"; };
 		51809F78275C4DB386BE1693 /* Pods_SwiftTween_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTween_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SwiftTween_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTween_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,11 +45,11 @@
 		607FACE51AFB9204008FA782 /* SwiftTween_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTween_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		71D8395D4BBCD45DD82FE049 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		71D8395D4BBCD45DD82FE049 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8383DF80761D2BC80F0034F4 /* Pods-SwiftTween_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTween_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTween_Tests/Pods-SwiftTween_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BED3EC138FAB72F8A816DC71 /* Pods-SwiftTween_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTween_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTween_Example/Pods-SwiftTween_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BFE8B8742D809899CEEDD960 /* Pods_SwiftTween_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTween_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C82A778714891F5307850A81 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C82A778714891F5307850A81 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DFED8ACEC13083FE1DC65333 /* Pods-SwiftTween_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTween_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTween_Tests/Pods-SwiftTween_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EFE5B941F98772B0036EAC8 /* SwiftTween.framework in Frameworks */,
 				74F1921D1A8D276D06DA99BD /* Pods_SwiftTween_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +104,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				3EFE5B8B1F9872990036EAC8 /* DemoCellTableViewCell.swift */,
 			);
 			name = "Example for SwiftTween";
 			path = SwiftTween;
@@ -153,6 +159,7 @@
 		9F685DF7E118217F80D3FF5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EFE5B951F98772B0036EAC8 /* SwiftTween.framework */,
 				51809F78275C4DB386BE1693 /* Pods_SwiftTween_Example.framework */,
 				BFE8B8742D809899CEEDD960 /* Pods_SwiftTween_Tests.framework */,
 			);
@@ -375,6 +382,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				3EFE5B8C1F9872990036EAC8 /* DemoCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +474,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -511,6 +520,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
