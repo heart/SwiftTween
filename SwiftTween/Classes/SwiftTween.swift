@@ -45,11 +45,13 @@ public class SwiftTween: NSObject {
         var value:Double
         
         if(timePassed < self.timeDuration ){
-            value = EasingFunction.getValue(e:self.ease , t:Double(timePassed)  , b:self.startValue , _c:self.endValue, d:self.timeDuration )
+            value = EasingFunction.getValue(ease: self.ease,
+                                            currentTime:timePassed, beginningValue:self.startValue, finalValue: self.endValue, totalDuration:self.timeDuration)
+            
             self.onUpdate(value,timePassed,false)
             
         }else{
-            value = EasingFunction.getValue(e:self.ease , t:self.timeDuration  , b:self.startValue , _c:self.endValue, d:self.timeDuration )
+            value = EasingFunction.getValue(ease:self.ease, currentTime:timePassed, beginningValue: self.startValue, finalValue:self.endValue, totalDuration:self.timeDuration)
             
             self.onUpdate(value,timePassed,true)
             self.timer.invalidate()

@@ -52,9 +52,10 @@
                                                     <color key="backgroundColor" red="0.89242632772020725" green="0.89242632772020725" blue="0.89242632772020725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIx-SB-mbL">
-                                                    <rect key="frame" x="225" y="221" width="46" height="30"/>
+                                                    <rect key="frame" x="225" y="193" width="106" height="58"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Replay"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <state key="normal" title="PLAY"/>
                                                     <connections>
                                                         <action selector="clickReplay:" destination="cnn-Co-pQg" eventType="touchUpInside" id="8wd-UP-7xC"/>
                                                     </connections>
@@ -78,6 +79,9 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="PcX-4B-DuC" secondAttribute="bottom" id="jwZ-8G-lgI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="PcX-4B-DuC" id="k0W-cp-WE7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

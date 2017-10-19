@@ -8,10 +8,15 @@
 import UIKit
 
 public class EasingFunction: NSObject {
-    //Thanks easing function from https://github.com/danro/jquery-easing
-    // t: current time, b: beginning value, _c: final value, d: total duration
-    public static func getValue(e:Ease, t:Double, b:Double, _c:Double, d:Double)->Double{
-        var t = t
+    
+    public static func getValue(ease:Ease, currentTime:Double, beginningValue:Double, finalValue:Double, totalDuration:Double)->Double{
+        
+        var e = ease
+        var t = currentTime
+        var b = beginningValue
+        var _c = finalValue
+        var d = totalDuration
+        
         switch e {
         case .Linear:
             let c = _c - b
@@ -229,7 +234,13 @@ public class EasingFunction: NSObject {
             }
         case .InBounce:
             let c = _c - b;
-            let v = EasingFunction.getValue(e: .OutBounce, t: d - t, b: 0, _c: c, d: d)
+            
+            let v = EasingFunction.getValue(ease:.OutBounce ,
+                                            currentTime:d - t,
+                                            beginningValue: 0,
+                                            finalValue: c,
+                                            totalDuration: d)
+            
             return c - v + b;
         case .OutBounce:
             let c = _c - b;
@@ -250,11 +261,19 @@ public class EasingFunction: NSObject {
             let c = _c - b;
             var v:Double
             if (t < d / 2) {
-                v = EasingFunction.getValue(e: .OutBounce, t: t * 2, b: 0, _c: c, d: d)
+                v = EasingFunction.getValue(ease: .OutBounce,
+                                            currentTime: t * 2,
+                                            beginningValue: 0,
+                                            finalValue: c,
+                                            totalDuration: d)
                 
                 return v * 0.5 + b;
             } else {
-                v = EasingFunction.getValue(e: .OutBounce, t: t * 2 - d, b: 0, _c: c, d: d)
+                v = EasingFunction.getValue(ease:.OutBounce,
+                                            currentTime:t * 2 - d,
+                                            beginningValue:0,
+                                            finalValue:c,
+                                            totalDuration:d )
                 return v * 0.5 + c * 0.5 + b;
             }
         }
