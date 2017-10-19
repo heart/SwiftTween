@@ -32,6 +32,13 @@ t.onUpdate = {
                             y:CGFloat(200-value),
                             width:f.size.width,
                             height:f.size.height)
+
+    if finish {
+    	print("Tween Finished")
+    }else{
+    	print("Time Passed > \(timePassed)")
+    }
+
 }
 
 t.to(startValue:0, endValue:200 , timeDuration:1 , ease:Ease.Linear )
