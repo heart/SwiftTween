@@ -13,6 +13,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### the Example project
+![SwiftTween Example app](https://github.com/heart/SwiftTween/blob/master/images/example_app.png?raw=true)
+
+
 ## Requirements
 
 ## Installation
