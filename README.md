@@ -1,3 +1,7 @@
+![SwiftTween Logo](https://github.com/heart/SwiftTween/blob/master/images/logo.png?raw=true)
+
+
+
 # SwiftTween
 
 [![CI Status](http://img.shields.io/travis/i am Heart/SwiftTween.svg?style=flat)](https://travis-ci.org/i am Heart/SwiftTween)
