@@ -42,7 +42,7 @@ class DemoCellTableViewCell: UITableViewCell {
                                     height:f.size.height)
         }
         
-        t.to(startValue:0, endValue:200 , timeDuration:1 , ease:self.ease )
+        t.tween(startValue:0, endValue:200 , timeDuration:1 , ease:self.ease )
     }
     
     public func setEasing(ease:Ease?){

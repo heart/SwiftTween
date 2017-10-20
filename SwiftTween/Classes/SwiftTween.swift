@@ -24,7 +24,7 @@ public class SwiftTween: NSObject {
         
     }
     
-    public func to(startValue:Double!, endValue:Double!, timeDuration:Double!, ease:Ease! ){
+    public func tween(startValue:Double!, endValue:Double!, timeDuration:Double!, ease:Ease! ){
         
         let timeInterval:Double =  1.0 / self.frameRate
         

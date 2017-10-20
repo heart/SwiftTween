@@ -9,6 +9,10 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftTween.svg?style=flat)](http://cocoapods.org/pods/SwiftTween)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftTween.svg?style=flat)](http://cocoapods.org/pods/SwiftTween)
 
+SwiftTween is a lightweight value tweener easy to use.
+
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -32,13 +36,18 @@ pod 'SwiftTween'
 
 ## Example
 ```swift
+let view = UIView()
+view.layer.backgroundColor = UIColor.red.cgColor
+view.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+
 let t = SwiftTween()
         
 t.onUpdate = {
     (value:Double,timePassed:Double,finish:Bool)->Void in
 
-    let f = self.dot.frame
-    self.dot.frame = CGRect(x:CGFloat(value-20) ,
+    let f = self.view.frame
+
+    view.frame = CGRect(x:CGFloat(value-20) ,
                             y:CGFloat(200-value),
                             width:f.size.width,
                             height:f.size.height)
@@ -51,8 +60,35 @@ t.onUpdate = {
 
 }
 
-t.to(startValue:0, endValue:200 , timeDuration:1 , ease:Ease.Linear )
+t.tween(startValue:0, endValue:200 , timeDuration:1 , ease:Ease.Linear )
 ```
+
+## You can get the tween value at any spot on the timline
+```swift
+let duration = 20
+let currentTime = 10
+let beginningValue = 0
+let finalValue = 100
+
+let value_At_Half_Of_Timeline = EasingFunction.getValue( 
+				ease:Ease.Linear, 
+				currentTime: currentTime, 
+				beginningValue: beginningValue, 
+				finalValue: finalValue , 
+				totalDuration:duration )
+
+print( value_At_Half_Of_Timeline ) //print 50 because it's a Linear easing
+```
+
+## You also can get the ratio of value at any spot on the timline
+```swift
+let timelineRatio = 0.5
+
+let value_Ratio_At_Half_Of_Timeline = EasingFunction.getRatio(ease:Ease.Linear,  timeRatio:timelineRatio )
+
+print( value_At_Half_Of_Timeline ) //print 0.5 because it's a Linear easing
+```
+
 
 ## Easing Type
 ```swift
