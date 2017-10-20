@@ -4,7 +4,7 @@
 
 # SwiftTween
 
-[![CI Status](http://img.shields.io/travis/i am Heart/SwiftTween.svg?style=flat)](https://travis-ci.org/i am Heart/SwiftTween)
+[![CI Status](http://img.shields.io/travis/heart/SwiftTween.svg?style=flat)](https://travis-ci.org/heart/SwiftTween)
 [![Version](https://img.shields.io/cocoapods/v/SwiftTween.svg?style=flat)](http://cocoapods.org/pods/SwiftTween)
 [![License](https://img.shields.io/cocoapods/l/SwiftTween.svg?style=flat)](http://cocoapods.org/pods/SwiftTween)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftTween.svg?style=flat)](http://cocoapods.org/pods/SwiftTween)
