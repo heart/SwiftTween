@@ -63,7 +63,7 @@ t.onUpdate = {
 t.tween(startValue:0, endValue:200 , timeDuration:1 , ease:Ease.Linear )
 ```
 
-## You can get the tween value at any spot on the timline
+## You can get the tween value at any spot of the timline
 ```swift
 let duration = 20
 let currentTime = 10
@@ -80,7 +80,7 @@ let value_At_Half_Of_Timeline = EasingFunction.getValue(
 print( value_At_Half_Of_Timeline ) //print 50 because it's a Linear easing
 ```
 
-## You also can get the ratio of value at any spot on the timline
+## You also can get the ratio of value at any spot of the timline
 ```swift
 let timelineRatio = 0.5
 
