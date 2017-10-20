@@ -45,7 +45,7 @@ let t = SwiftTween()
 t.onUpdate = {
     (value:Double,timePassed:Double,finish:Bool)->Void in
 
-    let f = self.view.frame
+    let f = view.frame
 
     view.frame = CGRect(x:CGFloat(value-20) ,
                             y:CGFloat(200-value),
